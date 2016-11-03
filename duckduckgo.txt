@@ -1,0 +1,52 @@
+* STATE: INIT => CONNECT handle 0x20051520; line 1396 (connection #-5000)
+* Rebuilt URL to: http://www.duckduckgo.com/
+* Added connection 0. The cache now contains 1 members
+*   Trying 176.34.131.233...
+* STATE: CONNECT => WAITCONNECT handle 0x20051520; line 1449 (connection #0)
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0* Connected to www.duckduckgo.com (176.34.131.233) port 80 (#0)
+* STATE: WAITCONNECT => SENDPROTOCONNECT handle 0x20051520; line 1556 (connection #0)
+* STATE: SENDPROTOCONNECT => DO handle 0x20051520; line 1574 (connection #0)
+> GET / HTTP/1.1
+> Host: www.duckduckgo.com
+> User-Agent: curl/7.50.1
+> Accept: */*
+> 
+* STATE: DO => DO_DONE handle 0x20051520; line 1653 (connection #0)
+* STATE: DO_DONE => WAITPERFORM handle 0x20051520; line 1780 (connection #0)
+* STATE: WAITPERFORM => PERFORM handle 0x20051520; line 1790 (connection #0)
+* HTTP 1.1 or later with persistent connection, pipelining supported
+< HTTP/1.1 301 Moved Permanently
+* Server nginx is not blacklisted
+< Server: nginx
+< Date: Fri, 30 Sep 2016 21:41:14 GMT
+< Content-Type: text/html
+< Content-Length: 178
+< Connection: keep-alive
+< Location: https://duckduckgo.com/
+< Expires: Sat, 30 Sep 2017 21:41:14 GMT
+< Cache-Control: max-age=31536000
+< 
+{ [178 bytes data]
+* STATE: PERFORM => DONE handle 0x20051520; line 1949 (connection #0)
+* multi_done
+100   178  100   178    0     0   1354      0 --:--:-- --:--:-- --:--:--  2542
+* Connection #0 to host www.duckduckgo.com left intact
+* Expire cleared
+<html>
+<head><title>301 Moved Permanently</title></head>
+<body bgcolor="white">
+<center><h1>301 Moved Permanently</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+* STATE: INIT => CONNECT handle 0x20051520; line 1396 (connection #-5000)
+* Rebuilt URL to: .../
+* Added connection 1. The cache now contains 2 members
+* getaddrinfo(3) failed for ..:80
+* Couldn't resolve host '..'
+* Closing connection 1
+* The cache now contains 1 members
+* Expire cleared
+curl: (6) Couldn't resolve host '..'
